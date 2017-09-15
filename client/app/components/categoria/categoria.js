@@ -1,6 +1,8 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import categoriaComponent from './categoria.component';
+import controller from './categoria.controller.js'
+
 
 let categoriaModule = angular.module('categoria', [
   uiRouter
@@ -12,7 +14,7 @@ let categoriaModule = angular.module('categoria', [
   $stateProvider
     .state('categoria', {
       url: '/categoria',
-      component: 'categoria'
+      component: 'categoria',
     });
 })
 

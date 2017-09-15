@@ -4,7 +4,7 @@
         <caption>Feito</caption>
         <th>Tarefa Realizada</th>
         <th>Tarefa</th>
-        <th>Categoria</th>
+        <th>categoria</th>
           <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{ feito: true }">
             <td><input type="checkbox" ng-model="tarefa.feito"></td>
             <td>{{tarefa.nome}}</td>
@@ -13,10 +13,10 @@
           <hr>
       </table>
       <table class="table table-striped">
-        <caption>Categoria "Casa"</caption>
+        <caption>categoria "Casa"</caption>
         <th>Tarefa Realizada</th>
         <th>Tarefa</th>
-        <th>Categoria</th>
+        <th>categoria</th>
           <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Casa', feito: false}">
             <td><input type="checkbox" ng-model="tarefa.feito"></td>
             <td>{{tarefa.nome}}</td>
@@ -25,10 +25,10 @@
           <hr>
       </table>
       <table class="table table-striped">
-        <caption>Categoria "Faculdade"</caption>
+        <caption>categoria "Faculdade"</caption>
         <th>Tarefa Realizada</th>
         <th>Tarefa</th>
-        <th>Categoria</th>
+        <th>categoria</th>
           <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Faculdade', feito: false}">
             <td><input type="checkbox" ng-model="tarefa.feito"></td>
             <td>{{tarefa.nome}}</td>
@@ -37,10 +37,10 @@
           <hr>
       </table>
       <table class="table table-striped">
-        <caption>Categoria "Trabalho"</caption>
+        <caption>categoria "Trabalho"</caption>
         <th>Tarefa Realizada</th>
         <th>Tarefa</th>
-        <th>Categoria</th>
+        <th>categoria</th>
           <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Trabalho', feito: false}">
             <td><input type="checkbox" ng-model="tarefa.feito"></td>
             <td>{{tarefa.nome}}</td>

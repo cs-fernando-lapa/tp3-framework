@@ -1,0 +1,19 @@
+
+   <div class="principal">
+     <h3>Selecione a addcategoria que queira adicionar a tarefa tarefa</h3>
+     <select ng-model="$ctrl.seleciona" name="Seleciona addcategoria">
+       <option value="" ng-repeat="categori in $ctrl.addcategorias">{{categori}}</option>
+     </select>
+     <hr>
+     <h3>Adicione uma tarefa</h3>
+     <form ng-submit="$ctrl.plusTarefa()">
+       <input type="text" ng-required="$ctrl.seleciona" name="Inserir tarefa" placeholder="Insira uma tarefa" ng-model="$ctrl.nome" required="required">
+       <input type="submit" name="Enviar">
+     </form>
+     <hr>
+     <table class="table table-striped">
+       <tr ng-repeat="tarefa in $ctrl.tarefas">
+         <td>{{tarefa.nome}}  {{tarefa.addcategoria}}</td>
+       </tr>
+     </table>
+   </div>

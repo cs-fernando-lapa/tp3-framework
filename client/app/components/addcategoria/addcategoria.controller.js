@@ -1,4 +1,4 @@
-class CategoriaController {
+class addCategoriaController {
   constructor() {
     this.tarefas = [
       { nome: 'Varrer o quarto', categoria: 'Casa', feito: false },
@@ -18,7 +18,7 @@ class CategoriaController {
 
     this.categorias = ['Casa', 'Trabalho', 'Faculdade'];
 
-    this.plusCategoria = function(){
+    this.pluscategoria = function(){
       this.categorias.push(this.categoria)
     }
 
@@ -32,4 +32,4 @@ class CategoriaController {
   }
 }
 
-export default CategoriaController;
+export default addCategoriaController;

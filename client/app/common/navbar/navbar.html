@@ -3,8 +3,8 @@
      uib-tooltip="Navbar - container-fluid">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" 
-              class="navbar-toggle collapsed" 
+      <button type="button"
+              class="navbar-toggle collapsed"
               ng-click="$ctrl.toggleNavBar()">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -13,13 +13,16 @@
       </button>
       <a class="navbar-brand" ui-sref="home">Oi Galáxia!</a>
     </div>
-    <div id="navbar" 
-         class="navbar-collapse collapse" 
+    <div id="navbar"
+         class="navbar-collapse collapse"
          uib-collapse="!$ctrl.isNavBarCollapsed">
       <ul class="nav navbar-nav">
         <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-        <li ui-sref-active="active"><a ui-sref="about">About</a></li>
-        <li ui-sref-active="active"><a ui-sref="contacts">Contacts</a></li>
+        <li ui-sref-active="active"><a ui-sref="categoria">Categoria</a></li>
+        <li ui-sref-active="active"><a ui-sref="addcategoria">addcategoria</a></li>
+        <li ui-sref-active="active"><a ui-sref="resposta">addcategoria</a></li>
+        <li ui-sref-active="active"><a ui-sref="tarefas">addcategoria</a></li>
+
       </ul>
     </div>
   </div>

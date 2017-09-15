@@ -41,4 +41,4 @@ let appModule = angular.module('app', [
   .name;
 
 angular.bootstrap(document.body, [appModule]);
-// export default appModule;
+ export default appModule;

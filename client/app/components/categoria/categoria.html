@@ -1,0 +1,40 @@
+<div ng-controller="myController as $ctrl">
+    <div class="principal">
+      <table>
+        <caption>Categoria "Casa"</caption>
+        <th>Tarefa Realizada</th>
+        <th>Tarefa</th>
+        <th>Categoria</th>
+          <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Casa'}">
+            <td><input type="checkbox" ng-model="tarefa.feito"></td>
+            <td>{{tarefa.nome}}</td>
+            <td>{{tarefa.categoria}}</td>
+          </tr>
+          <hr>
+      </table>
+      <table>
+        <caption>Categoria "Casa"</caption>
+        <th>Tarefa Realizada</th>
+        <th>Tarefa</th>
+        <th>Categoria</th>
+          <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Faculdade'}">
+            <td><input type="checkbox" ng-model="tarefa.feito"></td>
+            <td>{{tarefa.nome}}</td>
+            <td>{{tarefa.categoria}}</td>
+          </tr>
+          <hr>
+      </table>
+      <table>
+        <caption>Categoria "Casa"</caption>
+        <th>Tarefa Realizada</th>
+        <th>Tarefa</th>
+        <th>Categoria</th>
+          <tr ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria: 'Trabalho'}">
+            <td><input type="checkbox" ng-model="tarefa.feito"></td>
+            <td>{{tarefa.nome}}</td>
+            <td>{{tarefa.categoria}}</td>
+          </tr>
+          <hr>
+      </table>
+    </div>
+  </div>

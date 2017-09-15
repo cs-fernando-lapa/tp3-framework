@@ -1,6 +1,6 @@
 import angular from 'angular';
 import homeModule from './home/home';
-import aboutModule from './about/about';
+import aboutModule from './categoria/categoria';
 import contactsModule from './contacts/contacts';
 
 let componentModule = angular.module('app.components', [
@@ -8,7 +8,7 @@ let componentModule = angular.module('app.components', [
   aboutModule,
   contactsModule
 ])
-  
+
 .name;
 
 export default componentModule;
